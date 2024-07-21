@@ -1,0 +1,44 @@
+.Rgb {
+}
+
+.Rgb.start {
+  background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+  animation: color 12s ease-in-out infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.Rgb.stop {
+}
+
+.Rgb.start header {
+  background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+  animation: color 12s ease-in-out infinite;
+  background-size: 300% 300%;
+}
+
+.Rgb.stop header {
+}
+
+.glowOnHover3 {
+  min-width: 40px;
+  margin: 15px;
+  height: 35px;
+}
+
+.glowOnHover3:hover {
+  height: 45px;
+  min-width: 100px;
+  border-radius: 10px;
+}

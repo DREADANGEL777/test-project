@@ -1,0 +1,99 @@
+.App {
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.App.light {
+  background-color: rgb(28, 255, 3);
+  color: black;
+}
+
+.App.dark {
+  background-color: rgb(68, 19, 135);
+  color: rgb(0, 241, 241);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  /* border-radius: 5px; */
+  /* transition: background-color 0.5s, color 0.5s; */
+}
+
+.App.light button {
+  background-color: rgb(31, 180, 1);
+  color: black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(0, 51, 7);
+}
+
+.App.dark button {
+  background-color: rgb(68, 19, 135);
+  color: rgb(0, 241, 241);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px rgb(0, 241, 241);
+}
+
+header {
+  height: 70px;
+}
+.App.dark header {
+  background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+  animation: color 8s ease-in-out infinite;
+  background-size: 300% 300%;
+}
+
+.App.light header {
+  background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+  animation: color 8s ease-in-out infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.App.light span {
+  background-color: green;
+}
+
+.App.dark span {
+  background-color: blueviolet;
+}
+
+.App.light h6 {
+  color: rgb(28, 255, 3);
+}
+
+.App.dark h6 {
+  color: rgb(68, 19, 135);
+}
+
+.App.light h6::before {
+  color: black;
+}
+
+.App.dark h6::before {
+  color: rgb(0, 241, 241);
+}
+
+.glowOnHover3 {
+  padding: 0;
+  width: 190px;
+
+  height: 35px;
+}
+
+.glowOnHover3:hover {
+  height: 45px;
+  min-width: 210px;
+}
